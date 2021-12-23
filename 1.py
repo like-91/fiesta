@@ -30,9 +30,10 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-
+                pygame.quit()
         screen.blit(background, (0, 0))
         pygame.display.update()
         
+
 if __name__ == "__main__":
     main()
